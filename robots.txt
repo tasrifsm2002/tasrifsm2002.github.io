@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://tasrifsm2002.github.io/al-folio/sitemap.xml
+Sitemap: https://tasrifsm2002.github.io/sitemap.xml
