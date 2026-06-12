@@ -14,7 +14,7 @@ cv:
       username: tasrifsm2002
     # Add your LinkedIn once you have the handle, e.g.:
     - network: LinkedIn
-       username: https://www.linkedin.com/in/shahriyar-mahmud-tasrif-7b7450227/
+      username: https://www.linkedin.com/in/shahriyar-mahmud-tasrif-7b7450227/
 
   sections:
     Education:
