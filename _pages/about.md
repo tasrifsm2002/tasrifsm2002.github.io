@@ -6,7 +6,7 @@ subtitle: <a href='https://www.buet.ac.bd/'>Bangladesh University of Engineering
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: TASRIF.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Final-Year B.Sc. EEE Student</p>
