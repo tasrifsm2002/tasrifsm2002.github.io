@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A selection of laboratory and design projects in VLSI, analog IC design, embedded systems, and applied electronics.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: ["Digital & Analog IC Design", "Embedded Systems & Applied Electronics"]
 horizontal: false
 ---
 
