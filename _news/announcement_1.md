@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-06-01 09:00:00+0600
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Successfully defended my undergraduate thesis, *"Voltage-Controlled, High-Frequency PWM Generation via Spin Hall Nano-Oscillator,"* supervised by Dr. Orchi Hassan. Final results pending.
