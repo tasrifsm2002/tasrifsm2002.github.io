@@ -130,11 +130,13 @@ cv:
       - title: "Champion, Bangladesh Mathematical Olympiad (Regional Level)"
         authors:
           - Bangladesh Mathematical Olympiad
+          date: 2017
         awarder: Bangladesh Mathematical Olympiad
 
       - title: Champion, DMRC Science Club Mathematics Olympiad
         authors:
           - DMRC Science Club
+          date: 2019
         awarder: DMRC Science Club
 
     Skills:
