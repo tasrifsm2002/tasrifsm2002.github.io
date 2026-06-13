@@ -12,9 +12,8 @@ cv:
   social_networks:
     - network: GitHub
       username: tasrifsm2002
-    # Add your LinkedIn once you have the handle, e.g.:
     - network: LinkedIn
-      username: https://www.linkedin.com/in/shahriyar-mahmud-tasrif-7b7450227/
+      username: shahriyar-mahmud-tasrif-7b7450227
 
   sections:
     Education:
@@ -26,7 +25,6 @@ cv:
         start_date: 2021-12
         end_date: 2026-06
         score: "3.93/4.00 (Top 6% of class)"
-        courses: "Compound Semiconductor Devices, Solid State Devices, Nano-electronics & Nanotechnology, Optoelectronics, VLSI Circuits and Design, Analog Integrated Circuit Design, Microprocessor & Embedded Systems, Digital Electronics, Engineering Electromagnetics"
         highlights:
           - Perfect 4.00 GPA in the final two terms; thesis defended June 2026, final results pending.
           - "Top 6% of class through the 7th semester."
@@ -73,11 +71,19 @@ cv:
         start_date: 2025-11
         end_date: 2025-11
         highlights:
-          - Worked on the full IC design cycle across Analog, Digital VLSI, and RFIC domains.
-          - Practiced area-efficient layout, impedance matching, and power-aware RTL design.
-          - Performed DRC/LVS-based physical verification and design closure using industry EDA tools.
+          - Rotated across Analog, Digital VLSI, and RFIC design groups, gaining exposure to the full IC design cycle from specification through tape-out.
+          - "Analog & RFIC: practiced impedance matching and area-efficient layout techniques for RF building blocks and floorplanning."
+          - "Digital VLSI: contributed to power-aware RTL design with synthesis-oriented coding practices."
+          - Performed physical verification (DRC and LVS) and design-rule debugging to achieve design closure using industry-standard EDA tools.
 
-    Volunteer:
+    Coursework:
+      - label: "Major Courses (Electronics, Photonics, VLSI & Digital Systems)"
+        details: "Compound Semiconductor Devices, Solid State Devices, Nano-electronics & Nanotechnology, Optoelectronics, Semiconductor & Nano Devices, Fabrication & Processing Technology, Electrical Properties of Materials, VLSI Circuits and Design, Analog Integrated Circuit Design, Microprocessor & Embedded Systems, Digital Electronics, Engineering Electromagnetics"
+
+      - label: "Breadth Courses (Power, Communication & Circuits)"
+        details: "Digital Signal Processing, Continuous Signals and Linear Systems, Control Systems, Communication Systems (I & II), Power Electronics, Power Systems, Energy Conversion (I & II), Electrical & Electronic Circuits (4 courses)"
+
+    Leadership:
       - company: Dept. of EEE, BUET
         position: "Co-Organizer, BUET EEE Day 2026"
         location: Dhaka, Bangladesh
@@ -86,13 +92,15 @@ cv:
         highlights:
           - Collaborated with a large organizing team to plan and run the Integration Bee competition's knockout rounds and finals, alongside coordinating the EEE Olympiad and the department's cultural programme.
 
+    Teaching & Mentoring:
       - company: Bangladesh Mathematical Olympiad (BdMO)
         position: Academic Team Member
         location: Bangladesh
         start_date: 2022-01
         end_date: present
         highlights:
-          - Mentored students and helped organize national-level mathematics competitions across four consecutive years.
+          - Mentored students preparing for national-level mathematics olympiads for four consecutive years.
+          - Helped plan and run national-level mathematics competitions as part of BdMO's academic and organizing team.
 
     Awards:
       - title: "Dean's List Award (2022-2025)"
@@ -130,20 +138,20 @@ cv:
         awarder: DMRC Science Club
 
     Skills:
-      - name: "Hardware Description, EDA & Simulation"
+      - name: Languages & Scripting
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Python, Verilog, SystemVerilog, MATLAB, C, C++"
+
+      - name: EDA & Simulation
+        level: Advanced
+        icon: fa-solid fa-display
+        keywords: "HSPICE, Cadence Virtuoso, Cadence Spectre, ADS, Quartus Altera, Vivado Xilinx, Microwind, DSCH, Proteus, LTSpice, OrCAD PSpice, PSAF"
+
+      - name: Hardware
         level: Advanced
         icon: fa-solid fa-microchip
-        keywords: "Verilog, SystemVerilog, HSPICE, Cadence Virtuoso, Cadence Spectre, MATLAB, Python, C/C++"
-
-      - name: Core Research Domains
-        level: Advanced
-        icon: fa-solid fa-atom
-        keywords: "Spintronics, 2D Heterostructures, Neuromorphic Hardware, Analog IC Design, ASIC Flow"
-
-      - name: Theoretical Frameworks
-        level: Advanced
-        icon: fa-solid fa-square-root-variable
-        keywords: "Magnetization Dynamics (LLGS), Control Systems Theory, Semiconductor Device Physics"
+        keywords: "FPGA (Xilinx/Altera), Microcontrollers (ARM - STM32/Raspberry Pi, AVR - Arduino)"
 
     Languages:
       - name: Bangla
@@ -157,3 +165,18 @@ cv:
 
       - name: Spanish
         summary: Basic
+
+    References:
+      - company: "Dept. of EEE, BUET"
+        position: "Dr. Orchi Hassan — Associate Professor (Thesis Supervisor)"
+        location: Dhaka, Bangladesh
+        highlights:
+          - "Email: orchi@eee.buet.ac.bd"
+          - "Profile: orchi.buet.ac.bd"
+
+      - company: "Dept. of EEE, BUET"
+        position: "Dr. Muhammad Anisuzzaman Talukder — Professor & Director (RISE) (Academic Advisor)"
+        location: Dhaka, Bangladesh
+        highlights:
+          - "Email: anis@eee.buet.ac.bd"
+          - "Profile: anis.buet.ac.bd"
