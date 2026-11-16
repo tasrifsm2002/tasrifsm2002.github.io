@@ -6,7 +6,7 @@ subtitle: Lecturer, Dept. of EEE · <a href='https://www.bracu.ac.bd/'>BRAC Univ
 
 profile:
   align: right
-  image: md-shahriyar-mahmud-tasrif.jpg
+  image: tasrif.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Lecturer, Dept. of EEE, BRAC University</p>
