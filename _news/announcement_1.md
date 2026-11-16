@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Successfully defended my undergraduate thesis, *"Voltage-Controlled, High-Frequency PWM Generation via Spin Hall Nano-Oscillator,"* supervised by Dr. Orchi Hassan. Final results pending.
+Successfully defended my undergraduate thesis, *"Voltage Controlled High-Frequency Pulse Width Modulation Generation based on Spin Hall Nano-Oscillator,"* supervised by Dr. Orchi Hassan.

@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: A selection of laboratory and design projects in VLSI, analog IC design, embedded systems, and applied electronics.
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: ["Digital & Analog IC Design", "Embedded Systems & Applied Electronics"]
 horizontal: false
 ---
