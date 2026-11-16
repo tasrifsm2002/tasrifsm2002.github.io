@@ -1,0 +1,44 @@
+{% comment %}
+  Our own news list.
+  Parameters: limit (a number; leave out to show everything), more (true = add a "Show more" button for items past the first `step`)
+{% endcomment %}
+{% assign all_news = site.news | reverse %}
+{% assign total = all_news | size %}
+<div class="news-list" id="news-list">
+  {% for item in all_news %}
+    {% assign hide = false %}
+    {% if include.limit and forloop.index > include.limit %}{% break %}{% endif %}
+    {% if include.step and forloop.index > include.step %}{% assign hide = true %}{% endif %}
+    <div
+      class="news-item{% if hide %} news-extra{% endif %}"
+      {% if hide %}
+        hidden
+      {% endif %}
+    >
+      <div class="news-date">{{ item.date | date: '%b %d, %Y' }}</div>
+      <div class="news-text">{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</div>
+    </div>
+  {% endfor %}
+</div>
+{% if include.limit and total > include.limit %}
+  <p class="news-more">
+    <a href="{{ '/news/' | relative_url }}">See all news ({{ total }}) <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+  </p>
+{% endif %}
+{% if include.step and total > include.step %}
+  <p class="news-more">
+    <button type="button" class="site-btn" id="news-show-more">Show more</button>
+  </p>
+  <script>
+    (function () {
+      var btn = document.getElementById("news-show-more");
+      if (!btn) return;
+      var step = {{ include.step }};
+      btn.addEventListener("click", function () {
+        var hidden = document.querySelectorAll("#news-list .news-extra[hidden]");
+        for (var i = 0; i < hidden.length && i < step; i++) hidden[i].removeAttribute("hidden");
+        if (document.querySelectorAll("#news-list .news-extra[hidden]").length === 0) btn.style.display = "none";
+      });
+    })();
+  </script>
+{% endif %}

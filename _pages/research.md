@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description: Spintronic devices and circuits for energy-efficient, brain-inspired computing hardware.
 nav: true
 nav_order: 2
@@ -37,14 +37,10 @@ Two circuit architectures were designed, simulated and compared in HSPICE, using
 
 The full abstract is on the [publications](/publications/) page.
 
-<!-- TODO: add 1-2 figures here (e.g. oscillator waveform, circuit schematic, duty-cycle sweep).
-     Put the image files in assets/img/research/ and add them with:
-     {% include figure.liquid path="assets/img/research/your-figure.png" class="img-fluid rounded z-depth-1" zoomable=true caption="..." %} -->
-
 ## Ongoing work: spintronic non-volatile memory and 2D materials
 
 I am investigating spin-transfer torque (STT) and spin-orbit torque (SOT) switching mechanisms in magnetic tunnel junctions for next-generation non-volatile memory architectures, and extending this work toward two-dimensional material platforms — modelling memristive and spintronic device behaviour for synaptic and neuronal emulation in neuromorphic hardware.
 
 ## Looking ahead
 
-I am seeking a PhD position in the United States, in a group exploring novel materials and device physics for next-generation computing hardware. For my background and teaching, see my [CV](/cv/).
+I am open to research opportunities and collaborations on novel materials and device physics for next-generation computing hardware. If this overlaps with your work, please get in touch at [mahmud.tasrif@bracu.ac.bd](mailto:mahmud.tasrif@bracu.ac.bd). For my background, see my [CV](/cv/).

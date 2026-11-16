@@ -3,19 +3,19 @@
 # -----------------------------------------------------------------------------
 
 title: Md. Shahriyar Mahmud Tasrif
-first_name: Md. Shahriyar 
+first_name: Md. Shahriyar
 middle_name: Mahmud
 last_name: Tasrif
 contact_note: >
   Feel free to reach out by email, or connect with me on GitHub and LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal academic website of Md. Shahriyar Mahmud Tasrif, lecturer in EEE at BRAC University and M.Sc. student at BUET, researching spintronics, 2D materials, and neuromorphic hardware.
+  Academic website of Md. Shahriyar Mahmud Tasrif: researcher, educator and engineer. Lecturer in EEE at BRAC University and M.Sc. student at BUET, working on spintronic devices, emerging materials and energy-efficient computing architectures.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Md. Shahriyar Mahmud Tasrif, spintronics, spin Hall nano-oscillator, spin-orbit torque, magnetic tunnel junction, non-volatile memory, 2D materials, neuromorphic hardware, VLSI, BUET, BRAC University, EEE # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # the small logo in the browser tab: a file inside assets/img/ (or a single emoji)
 
 url: https://tasrifsm2002.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -121,7 +121,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: blog # blog_name will be displayed in your blog page
+blog_name: Blog # blog_name will be displayed in your blog page
 blog_description: Notes on research, teaching, and engineering.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts

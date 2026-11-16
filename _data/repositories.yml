@@ -4,7 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 # Add the names of your own repositories here to show them as cards on the
-# repositories page, e.g.:
-# github_repos:
-#   - tasrifsm2002/tasrifsm2002.github.io
+# repositories page. The Repositories page is not in the menu (see _pages/repositories.md);
+# its address is https://tasrifsm2002.github.io/repositories/
 github_repos:
+  - tasrifsm2002/tasrifsm2002.github.io

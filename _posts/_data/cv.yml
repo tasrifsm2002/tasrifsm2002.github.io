@@ -1,0 +1,218 @@
+cv:
+  name: Md. Shahriyar Mahmud Tasrif
+  label: "Lecturer, EEE · Spintronics & Neuromorphic Hardware"
+  email: mahmud.tasrif@bracu.ac.bd
+  location: Dhaka, Bangladesh
+  image: ""
+  summary: >
+    Lecturer in Electrical & Electronic Engineering at BRAC University and M.Sc. student in EEE (Electronics and
+    Photonics) at BUET. B.Sc. in EEE from BUET with a CGPA of 3.94/4.00 (top 6% of the class). Researching spintronic
+    devices, non-volatile memory, and 2D-material platforms for energy-efficient, brain-inspired computing hardware.
+    Seeking PhD positions in the United States.
+
+  social_networks:
+    - network: GitHub
+      username: tasrifsm2002
+    - network: LinkedIn
+      username: shahriyar-mahmud-tasrif-7b7450227
+
+  # NOTE: the CV page only knows these exact section names: Experience, Volunteer, Education, Awards,
+  # Publications, Skills, Languages, Interests, Certificates, Projects and References (each with its own
+  # entry fields). Any other section name (Coursework, Leadership, ...) only shows entries written as
+  # `label` + `details` (or `bullet`). References entries must use `name` + `reference`.
+  sections:
+    Education:
+      - institution: Bangladesh University of Engineering and Technology (BUET)
+        location: Dhaka, Bangladesh
+        url: https://www.buet.ac.bd/
+        area: "Electrical & Electronic Engineering — Electronics and Photonics major"
+        studyType: M.Sc.
+        end_date: present
+        highlights:
+          - "Currently pursuing the M.Sc. degree (ongoing)."
+
+      - institution: Bangladesh University of Engineering and Technology (BUET)
+        location: Dhaka, Bangladesh
+        url: https://www.buet.ac.bd/
+        area: "Electrical & Electronic Engineering — Electronics and Photonics"
+        studyType: B.Sc.
+        start_date: 2021-12
+        end_date: 2026-06
+        highlights:
+          - "CGPA: 3.94/4.00 (Top 6% of the class)."
+          - Perfect 4.00 GPA in the final two consecutive terms.
+          - "Thesis defended June 2026."
+
+      - institution: Dr. Mahbubur Rahman Mollah College
+        location: Bangladesh
+        area: Higher Secondary Certificate (HSC)
+        studyType: HSC
+        date: 2020
+        highlights:
+          - "GPA: 5.00/5.00"
+
+      - institution: Gazipur Khan Government High School and College
+        location: Bangladesh
+        area: Secondary School Certificate (SSC)
+        studyType: SSC
+        date: 2018
+        highlights:
+          - "GPA: 4.94/5.00"
+
+    Experience:
+      - company: "Dept. of EEE, BRAC University"
+        position: Lecturer
+        location: Dhaka, Bangladesh
+        start_date: 2026-09
+        end_date: present
+        summary: September 2026 – Present (full-time)
+        highlights:
+          - "Courses taught since July 2026: EEE 343 Digital Signal Processing; EEE 343L Digital Signal Processing Laboratory; EEE 101L Electrical Circuit I Laboratory; EEE 203L Electrical Circuit II Laboratory."
+
+      - company: "Dept. of EEE, BRAC University"
+        position: Adjunct Lecturer
+        location: Dhaka, Bangladesh
+        start_date: 2026-07
+        end_date: 2026-09
+        summary: July 2026 – September 2026
+
+      - company: "Dept. of EEE, Bangladesh University of Engineering and Technology (BUET)"
+        position: Adjunct Lecturer
+        location: Dhaka, Bangladesh
+        start_date: 2026-06
+        end_date: 2026-09
+        summary: June 2026 – September 2026
+        highlights:
+          - "Courses taught: EEE 208 Electronic Circuits II Laboratory; EEE 310 Communication Systems I Laboratory; EEE 260 Electrical and Electronic Technology Sessional."
+
+      - company: "BUET, Dept. of EEE — Undergraduate Thesis"
+        position: "Voltage Controlled High-Frequency Pulse Width Modulation Generation based on Spin Hall Nano-Oscillator"
+        location: Dhaka, Bangladesh
+        start_date: 2025-03
+        end_date: 2026-06
+        summary: >
+          March 2025 – June 2026. Undergraduate thesis supervised by Dr. Orchi Hassan; defended June 2026.
+        highlights:
+          - Designed a hybrid spintronic-CMOS pulse-width-modulation (PWM) generator built around a field-free Spin Hall Nano-Oscillator (SHNO) driven by spin-orbit torque, replacing conventional high-speed CMOS oscillator cores.
+          - "Modeled and compared two circuit architectures: a 7T-1MTJ single-pFET design and a CMOS transmission-gate variant, using a macrospin LLGS magnetization-dynamics model for the MTJ alongside predictive FinFET device cards."
+          - Achieved stable 7.5 GHz oscillation with 6-95% duty-cycle tunability at sub-50 microwatt power consumption (7T-1MTJ design).
+          - "The transmission-gate variant improves duty-cycle linearity (R² > 0.98 over a 20-85% range) with about 4× lower control sensitivity (~1.5%/mV versus ~6%/mV)."
+
+      - company: "BUET, Dept. of EEE — Undergraduate Research"
+        position: "Spintronic Non-Volatile Memory: Device Physics and Circuit Design"
+        location: Dhaka, Bangladesh
+        start_date: 2025-03
+        end_date: present
+        summary: March 2025 – Present. Supervisor Dr. Orchi Hassan.
+        highlights:
+          - Investigating Spin-Transfer Torque (STT) and Spin-Orbit Torque (SOT) switching mechanisms in Magnetic Tunnel Junctions (MTJs) for next-generation Non-Volatile Memory (NVM) architectures.
+          - Extending this work toward two-dimensional material platforms, modeling memristive and spintronic device behavior for synaptic and neuronal emulation in neuromorphic hardware.
+
+      - company: Neural Semiconductor Limited (NSL)
+        position: Industrial Attachment
+        location: Uttara, Dhaka, Bangladesh
+        date: 2025-11
+        summary: November 2025
+        highlights:
+          - Rotated across Analog, Digital VLSI, and RFIC design groups, gaining exposure to the full IC design cycle from specification through tape-out.
+          - "Analog & RFIC: practiced impedance matching and area-efficient layout techniques for RF building blocks and floorplanning."
+          - "Digital VLSI: contributed to power-aware RTL design with synthesis-oriented coding practices."
+          - Performed physical verification (DRC and LVS) and design-rule debugging to achieve design closure using industry-standard EDA tools.
+
+    Coursework:
+      - label: "Major Courses (Electronics, Photonics, VLSI & Digital Systems)"
+        details: "Compound Semiconductor Devices, Solid State Devices, Nano-electronics & Nanotechnology, Optoelectronics, Semiconductor & Nano Devices, Fabrication & Processing Technology, Electrical Properties of Materials, VLSI Circuits and Design, Analog Integrated Circuit Design, Microprocessor & Embedded Systems, Digital Electronics, Engineering Electromagnetics"
+
+      - label: "Breadth Courses (Power, Communication & Circuits)"
+        details: "Digital Signal Processing, Continuous Signals and Linear Systems, Control Systems, Communication Systems (I & II), Power Electronics, Power Systems, Energy Conversion (I & II), Electrical & Electronic Circuits (4 courses)"
+
+    Leadership:
+      - label: "Co-Organizer, BUET EEE Day 2026 (Dept. of EEE, BUET, 2026)"
+        details: "Collaborated with a large organizing team to plan and run the Integration Bee competition's knockout rounds and finals, alongside coordinating the EEE Olympiad and the department's cultural programme."
+
+    Teaching & Mentoring:
+      - label: "Lecturer, BRAC University (September 2026 – Present; adjunct lecturer July – September 2026)"
+        details: "EEE 343 Digital Signal Processing; EEE 343L Digital Signal Processing Laboratory; EEE 101L Electrical Circuit I Laboratory; EEE 203L Electrical Circuit II Laboratory."
+
+      - label: "Adjunct Lecturer, BUET (June – September 2026)"
+        details: "EEE 208 Electronic Circuits II Laboratory; EEE 310 Communication Systems I Laboratory; EEE 260 Electrical and Electronic Technology Sessional."
+
+      - label: "Academic Team Member, Bangladesh Mathematical Olympiad (2022 – Present)"
+        details: "Mentored students preparing for national-level mathematics olympiads for four consecutive years; helped plan and run national-level mathematics competitions as part of BdMO's academic and organizing team."
+
+    Teaching Interests:
+      - label: "Device Physics & Materials"
+        details: "Solid State Devices, Compound Semiconductor Devices, Semiconductor Physics, Optoelectronics, and Electrical Properties of Materials."
+
+      - label: "Circuits & Systems"
+        details: "VLSI Circuits and Design, Analog Integrated Circuit Design, Digital Electronics, and Microprocessor & Embedded Systems."
+
+    Awards:
+      - title: "Dean's List Award (2022-2025)"
+        authors:
+          - Bangladesh University of Engineering and Technology
+        date: 2025
+        awarder: BUET
+        summary: >
+          Awarded for maintaining a GPA of 3.75 or above in both terms of an academic year; received in each year of study.
+
+      - title: "University Merit Scholarship (2022-2025)"
+        authors:
+          - BUET Faculty of Electrical and Electronic Engineering
+        date: 2025
+        awarder: BUET
+        summary: >
+          Awarded to the top 40 students of the Engineering Faculty based on term examination results; received in each academic year.
+
+      - title: Bachelor's Degree with Honors
+        authors:
+          - Bangladesh University of Engineering and Technology
+        date: 2026
+        awarder: BUET
+        summary: >
+          Awarded for an overall CGPA of 3.75 or higher (final CGPA 3.94/4.00).
+
+      - title: "Champion, Bangladesh Mathematical Olympiad (Regional Level)"
+        authors:
+          - Bangladesh Mathematical Olympiad
+        date: 2017
+        awarder: Bangladesh Mathematical Olympiad
+
+      - title: Champion, DMRC Science Club Mathematics Olympiad
+        authors:
+          - DMRC Science Club
+        date: 2019
+        awarder: DMRC Science Club
+
+    Skills:
+      - name: Languages & Scripting
+        icon: fa-solid fa-code
+        keywords: "Python, Verilog, SystemVerilog, MATLAB, C, C++"
+
+      - name: EDA & Simulation
+        icon: fa-solid fa-display
+        keywords: "HSPICE, Cadence Virtuoso, Cadence Spectre, ADS, Quartus Altera, Vivado Xilinx, Microwind, DSCH, Proteus, LTSpice, OrCAD PSpice, PSAF"
+
+      - name: Hardware
+        icon: fa-solid fa-microchip
+        keywords: "FPGA (Xilinx/Altera), Microcontrollers (ARM - STM32/Raspberry Pi, AVR - Arduino)"
+
+    Languages:
+      - name: Bangla
+        summary: Native
+
+      - name: English
+        summary: Fluent
+
+      - name: Hindi
+        summary: Conversational
+
+      - name: Spanish
+        summary: Basic
+
+    References:
+      - name: "Dr. Orchi Hassan — Associate Professor, Dept. of EEE, BUET (Thesis Supervisor)"
+        reference: "Email: orchi@eee.buet.ac.bd · Profile: [orchi.buet.ac.bd](https://orchi.buet.ac.bd)"
+
+      - name: "Dr. Muhammad Anisuzzaman Talukder — Professor & Director (RISE), Dept. of EEE, BUET (Academic Advisor)"
+        reference: "Email: anis@eee.buet.ac.bd · Profile: [anis.buet.ac.bd](https://anis.buet.ac.bd)"

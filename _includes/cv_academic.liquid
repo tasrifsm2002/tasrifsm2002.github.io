@@ -1,0 +1,122 @@
+{% assign cv = site.data.cv %}
+<div class="cv-page">
+  <div class="cv-header card p-3">
+    <h2 class="cv-name">{{ cv.name }}</h2>
+    <p class="cv-designation"><strong>Designation:</strong> {{ cv.designation }}</p>
+    <ul class="cv-contact list-unstyled mb-0">
+      <li><i class="fa-solid fa-location-dot fa-sm"></i> {{ cv.location }}</li>
+      {% for e in cv.emails %}
+        <li>
+          <i class="fa-solid fa-envelope fa-sm"></i> <strong>{{ e.label }}:</strong> <a href="mailto:{{ e.address }}">{{ e.address }}</a>
+        </li>
+      {% endfor %}
+      {% for l in cv.links %}
+        <li>
+          <i class="fa-solid fa-link fa-sm"></i> <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.label }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% if page.cv_pdf %}
+      <p class="mt-3 mb-0">
+        <a class="site-btn" href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-solid fa-file-pdf"></i> Download PDF version</a
+        >
+      </p>
+    {% endif %}
+  </div>
+
+  <div class="cv-section card p-3">
+    <h3 class="card-title">Summary</h3>
+    <p class="mb-0">{{ cv.summary }}</p>
+  </div>
+
+  {% for section in cv.sections %}
+    <div class="cv-section card p-3" id="{{ section.title | slugify }}">
+      <h3 class="card-title">{{ section.title }}</h3>
+
+      {% if section.type == 'entries' %}
+        {% for item in section.items %}
+          <div class="cv-entry row">
+            <div class="col-md-3 cv-period">
+              {% if item.period -%}
+                <span class="badge">{{ item.period }}</span>
+              {%- endif %}
+            </div>
+            <div class="col-md-9">
+              <p class="cv-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              {% if item.place %}
+                <p class="cv-place">{{ item.place | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              {% endif %}
+              {% if item.lines %}
+                <ul class="cv-lines">
+                  {% for line in item.lines %}
+                    <li>{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+        {% for n in section.notes %}
+          <p class="cv-note">
+            <strong>{{ n.label }}:</strong> {{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}
+          </p>
+        {% endfor %}
+
+      {% elsif section.type == 'skills' %}
+        {% for item in section.items %}
+          <p class="cv-note">
+            <strong>{{ item.label }}:</strong> {{ item.text }}
+          </p>
+        {% endfor %}
+
+      {% elsif section.type == 'projects' %}
+        {% if section.note %}
+          <p class="cv-place">{{ section.note }}</p>
+        {% endif %}
+        {% assign sorted_all = site.projects | sort: 'importance' %}
+        {% for category in site.data.project_categories %}
+          {% assign group = sorted_all | where: 'category', category %}
+          {% if group.size > 0 %}
+            <p class="cv-subhead">{{ category }}</p>
+            <ul class="cv-lines">
+              {% for project in group %}
+                <li>
+                  <a
+                    href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><strong>{{ project.title }}</strong></a
+                  >
+                  {% if project.lab -%}
+                    <em>({{ project.lab }})</em>
+                  {%- endif %}
+                  <br>
+                  {{ project.description }}
+                  {% if project.tools -%}
+                    <br>
+                    <span class="cv-place">Tools: {{ project.tools }}</span>
+                  {%- endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endfor %}
+
+      {% elsif section.type == 'references' %}
+        <div class="row">
+          {% for r in section.items %}
+            <div class="col-md-6 cv-ref">
+              <p class="cv-heading mb-1">{{ r.name }}</p>
+              <p class="cv-place mb-1">{{ r.role }}</p>
+              <p class="mb-0">
+                <a href="mailto:{{ r.email }}">{{ r.email }}</a><br>
+                <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">{{ r.url | remove: 'https://' }}</a>
+              </p>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

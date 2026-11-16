@@ -1,0 +1,328 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* =============================================================================
+   MY CUSTOM STYLES (Tasrif)
+   Everything below is added on top of the theme. To undo the custom look,
+   delete everything from this comment to the end of the file.
+   ============================================================================= */
+
+/* ---- colours: change these two lines to recolour the whole site ---------- */
+:root {
+  --global-theme-color: #1d4e89;
+  --global-hover-color: #1d4e89;
+  --global-hover-text-color: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.09);
+  --soft-bg: rgba(29, 78, 137, 0.06);
+}
+html[data-theme="dark"] {
+  --global-theme-color: #6cb4ee;
+  --global-hover-color: #6cb4ee;
+  --global-hover-text-color: #0b1b2b;
+  --card-border: rgba(255, 255, 255, 0.14);
+  --soft-bg: rgba(108, 180, 238, 0.1);
+}
+
+/* ---- general reading comfort -------------------------------------------- */
+article p,
+article li {
+  line-height: 1.7;
+}
+.post .post-header .post-title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.post .post-header .post-description,
+.post .post-header .desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+}
+article h2 {
+  margin-top: 2.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--card-border);
+  font-weight: 600;
+}
+article h3 {
+  margin-top: 1.6rem;
+  font-weight: 600;
+}
+.profile img {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.profile .more-info {
+  margin-top: 0.8rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* ---- home page: three identities ---------------------------------------- */
+.identity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.8rem 0 0.5rem;
+  clear: both;
+}
+.identity-card {
+  display: block;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--card-border);
+  border-top: 4px solid var(--global-theme-color);
+  border-radius: 10px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.identity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+.identity-card i {
+  font-size: 1.4rem;
+  color: var(--global-theme-color);
+}
+.identity-card h3 {
+  margin: 0.4rem 0 0.3rem;
+  font-size: 1.15rem;
+}
+.identity-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+@media (max-width: 767px) {
+  .identity-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- news ---------------------------------------------------------------- */
+.news-list .news-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--card-border);
+}
+.news-list .news-item[hidden] {
+  display: none;
+}
+.news-list .news-date {
+  flex: 0 0 8rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  font-size: 0.92rem;
+}
+.news-list .news-text {
+  flex: 1;
+  line-height: 1.55;
+}
+.news-more {
+  margin-top: 0.9rem;
+}
+@media (max-width: 575px) {
+  .news-list .news-item {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
+/* ---- projects ------------------------------------------------------------ */
+.projects h2.category {
+  text-align: left;
+  color: var(--global-text-color);
+  border-bottom: none;
+  border-left: 5px solid var(--global-theme-color);
+  padding: 0.1rem 0 0.1rem 0.8rem;
+  margin: 2.6rem 0 1.1rem;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+.projects .project-link {
+  color: inherit;
+  text-decoration: none;
+}
+.projects .project-card {
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+.projects .project-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.projects .project-lab {
+  margin: 0 0 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+.projects .project-card .card-title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.projects .project-card .card-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--global-text-color);
+}
+.projects .project-tools {
+  margin: 0.2rem 0 0.6rem;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+}
+.projects .project-open {
+  margin: auto 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+/* ---- CV ------------------------------------------------------------------ */
+.cv-page .card {
+  margin-top: 1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+.cv-page .cv-name {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+}
+.cv-page .cv-designation {
+  margin-bottom: 0.6rem;
+}
+.cv-page .cv-contact li {
+  margin: 0.15rem 0;
+}
+.cv-page .cv-contact i {
+  width: 1.2rem;
+  color: var(--global-theme-color);
+}
+.cv-page .cv-section > .card-title {
+  margin: 0 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--global-theme-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.cv-page .cv-entry {
+  margin-bottom: 0.9rem;
+}
+.cv-page .cv-period .badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  background: var(--soft-bg);
+  color: var(--global-theme-color);
+  font-weight: 600;
+  font-size: 0.8rem;
+  white-space: normal;
+  text-align: left;
+}
+.cv-page .cv-heading {
+  margin: 0;
+  font-weight: 600;
+}
+.cv-page .cv-place {
+  margin: 0.1rem 0 0.3rem;
+  font-size: 0.92rem;
+  color: var(--global-text-color-light);
+}
+.cv-page .cv-lines {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+}
+.cv-page .cv-lines li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+.cv-page .cv-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.93rem;
+}
+.cv-page .cv-subhead {
+  margin: 1rem 0 0.3rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+.cv-page .cv-ref {
+  margin-bottom: 0.8rem;
+}
+@media (max-width: 767px) {
+  .cv-page .cv-period {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* ---- teaching table ------------------------------------------------------ */
+.teaching-table th {
+  border-bottom: 2px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+}
+.teaching-table td {
+  font-size: 0.95rem;
+}
+
+/* ---- buttons ------------------------------------------------------------- */
+.site-btn {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid var(--global-theme-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+.site-btn:hover {
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+  text-decoration: none;
+}

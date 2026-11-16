@@ -1,7 +1,8 @@
 ---
 layout: page
-title: news
+title: News
 permalink: /news/
+description: Updates on my academic and professional milestones.
 ---
 
-{% include news.liquid %}
+{% include news_list.liquid step=6 %}

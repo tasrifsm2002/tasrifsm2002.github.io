@@ -1,0 +1,25 @@
+<div class="col">
+  <a
+    class="project-link"
+    href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}"
+    {% if project.redirect %}
+      target="_blank" rel="noopener noreferrer"
+    {% endif %}
+  >
+    <div class="card h-100 hoverable project-card">
+      <div class="card-body">
+        {% if project.lab %}
+          <p class="project-lab">{{ project.lab }}</p>
+        {% endif %}
+        <h3 class="card-title">{{ project.title }}</h3>
+        <p class="card-text">{{ project.description }}</p>
+        {% if project.tools %}
+          <p class="project-tools"><i class="fa-solid fa-screwdriver-wrench fa-sm"></i> {{ project.tools }}</p>
+        {% endif %}
+        {% if project.redirect %}
+          <p class="project-open">View project files <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></p>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</div>

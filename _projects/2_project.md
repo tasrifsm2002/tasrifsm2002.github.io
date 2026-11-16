@@ -1,13 +1,19 @@
 ---
 layout: page
-title: 1.8 GHz Low-Noise RF Amplifier
-description: A common-source LNA with inductive source degeneration, optimized for minimum noise figure and 50 Ω matching.
+title: "Electric Elevator Control System"
+description: "A digital elevator controller with floor-request handling, direction arbitration and door control, implemented on an FPGA."
 importance: 2
-category: Digital & Analog IC Design
+category: "Digital Design & FPGA"
+lab: "Digital Logic Design Laboratory"
+tools: "Verilog, SystemVerilog, Quartus Altera, FPGA"
+drive: "https://drive.google.com/drive/folders/1UEjksj5IJpu0V31xLyQK4B8gj_W2-NTK?usp=sharing"
+redirect: "https://drive.google.com/drive/folders/1UEjksj5IJpu0V31xLyQK4B8gj_W2-NTK?usp=sharing"
 ---
 
-*Analog Integrated Circuit Laboratory*
+_Digital Logic Design Laboratory_
 
-Designed a 1.8 GHz common-source low-noise amplifier (LNA) with inductive source degeneration, analytically optimized for minimum noise figure and a 50 Ω input match. Verified the design through S-parameter and noise simulations in Cadence Spectre using a gpdk090 CMOS process.
+Designed a digital elevator controller with floor-request handling, direction arbitration and door-control logic using combinational and sequential digital circuits, implemented on an FPGA.
 
-**Tools:** Cadence Virtuoso, Cadence Spectre, gpdk090 CMOS
+**Tools:** Verilog, SystemVerilog, Quartus Altera, FPGA
+
+[Project files on Google Drive](https://drive.google.com/drive/folders/1UEjksj5IJpu0V31xLyQK4B8gj_W2-NTK?usp=sharing)

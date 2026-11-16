@@ -1,13 +1,19 @@
 ---
 layout: page
-title: TFT Display Aging Study
-description: A DIY spectrometer tracking spectral degradation of a TFT-LCD panel over 22 days.
+title: "Speak and Steer"
+description: "A voice-activated RC car that classifies spoken steering commands in real time using MFCC features and Dynamic Time Warping."
 importance: 8
-category: Embedded Systems & Applied Electronics
+category: "Signal Processing & Instrumentation"
+lab: "Digital Signal Processing Laboratory"
+tools: "Python, MATLAB, Raspberry Pi, MFCC, DTW"
+drive: "https://drive.google.com/file/d/1t5WvuVwMuBUG1zxUjNMXt7IxAHKOp_rK/view?usp=sharing"
+redirect: "https://drive.google.com/file/d/1t5WvuVwMuBUG1zxUjNMXt7IxAHKOp_rK/view?usp=sharing"
 ---
 
-*Optoelectronics Laboratory*
+_Digital Signal Processing Laboratory_
 
-Built a low-cost DIY spectrometer using an ESP32 and a webcam to track the daily spectral degradation of a TFT-LCD panel over 22 days. Fitted first-order exponential decay models in Python/MATLAB and quantified per-channel (RGB) brightness loss.
+Built a voice-activated RC car using a Raspberry Pi and Python, implementing MFCC-based feature extraction and Dynamic Time Warping to classify spoken steering commands in real time.
 
-**Tools:** ESP32, Python, MATLAB, Webcam
+**Tools:** Python, MATLAB, Raspberry Pi, MFCC, DTW
+
+[Project files on Google Drive](https://drive.google.com/file/d/1t5WvuVwMuBUG1zxUjNMXt7IxAHKOp_rK/view?usp=sharing)

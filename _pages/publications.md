@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: Theses and publications, in reverse chronological order.
+title: Publications
+description: Theses and publications, newest first.
 nav: true
 nav_order: 3
 ---

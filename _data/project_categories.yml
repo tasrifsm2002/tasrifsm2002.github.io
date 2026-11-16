@@ -1,0 +1,6 @@
+# The order of project groups on the Projects page and on the CV.
+# Each name must match the "category:" line inside the files in the _projects folder.
+- Digital Design & FPGA
+- Analog & RF Circuits
+- Embedded Systems & Control
+- Signal Processing & Instrumentation
