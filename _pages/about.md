@@ -2,8 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lecturer, Department of Electrical and Electronic Engineering, <a href='https://www.bracu.ac.bd/'>BRAC University</a><br>
-Pursuing an M.Sc. in Electrical and Electronic Engineering at <a href='https://www.buet.ac.bd/'>BUET</a> · Dhaka, Bangladesh
+subtitle: >
+  Lecturer, Department of Electrical and Electronic Engineering,
+  <a href="https://www.bracu.ac.bd/">BRAC University</a><br>
+  Pursuing an M.Sc. in Electrical and Electronic Engineering at
+  <a href="https://www.buet.ac.bd/">BUET</a> · Dhaka, Bangladesh
 
 profile:
   align: right
