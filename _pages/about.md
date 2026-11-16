@@ -2,15 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lecturer, Dept. of EEE · <a href='https://www.bracu.ac.bd/'>BRAC University</a> · M.Sc. student, <a href='https://www.buet.ac.bd/'>BUET</a> · Dhaka, Bangladesh
+subtitle: Lecturer, Department of Electrical and Electronic Engineering, <a href='https://www.bracu.ac.bd/'>BRAC University</a><br>
+Pursuing an M.Sc. in Electrical and Electronic Engineering at <a href='https://www.buet.ac.bd/'>BUET</a> · Dhaka, Bangladesh
 
 profile:
   align: right
   image: tasrif.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>Lecturer, Dept. of EEE, BRAC University</p>
-    <p>M.Sc. student, EEE, BUET</p>
+    <p>Lecturer, Department of EEE<br>BRAC University</p>
+    <p>Pursuing an M.Sc. in EEE<br>BUET</p>
     <p>Dhaka, Bangladesh</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
