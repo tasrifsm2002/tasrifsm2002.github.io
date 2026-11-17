@@ -70,6 +70,7 @@ article li {
   color: var(--global-text-color-light);
 }
 article h2 {
+  font-size: 1.65rem;
   margin-top: 2.2rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--card-border);
@@ -325,4 +326,18 @@ article h3 {
   background: var(--global-theme-color);
   color: var(--global-hover-text-color);
   text-decoration: none;
+}
+
+/* ---- polish (v4.1) ------------------------------------------------------- */
+.cv-page .cv-entry.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.cv-page .cv-entry > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+.cv-page .cv-lines a,
+.cv-page .cv-note a {
+  color: var(--global-theme-color);
 }
